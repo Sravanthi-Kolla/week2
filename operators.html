@@ -35,14 +35,12 @@ table, th, td {
 <p id="p2">avg=(maths+physics+chemistry)/3=</p>
 <script type="text/javascript">
 	var maths=98,physics=91,chemistry=100;
+	function fun(){
 	document.getElementById('p1').innerHTML+=(maths+physics+chemistry);
 	document.getElementById('p2').innerHTML+=(maths+physics+chemistry)/3;
+}
+fun();
 	
-
-
 </script>
-
-	
-</p>
 </body>
 </html>
