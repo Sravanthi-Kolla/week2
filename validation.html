@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form created by me</title>
+        <meta charset="utf-8">
+</head>
+<body>
+	<form  onsubmit="return results();">
+		<label for="name">Name:</label>
+			<input type="text" id="name" name="user_name" required>
+			<br><br>
+			
+
+			<label for="phone">Phone no:</label>
+			<input type="number" id="phone" name="user_phone" required>
+			<br><br>
+		
+			<p id="choices" >Choice of Course: </p><br>
+			<input type="radio" id="choice" name="choice_course" required  >
+            <label for="choice">bachelors</label><br>
+            <input type="radio" id="choice2" name="choice_course" >
+            <label for="choice2">masters</label><br><br>
+            
+
+			
+
+            <label>Description: <br></label>
+			<textarea id ="description" name="user_description" required></textarea>
+			<br><br>
+			
+			<input type="Submit" value="Submit" >
+	
+	</form>
+	<script type="text/javascript">
+		function results(){
+			var name = document.getElementById('name').value;
+			var phone = document.getElementById('phone').value;
+			if(document.getElementById('choice').checked){
+				 mychoice= document.getElementById('choice').value;
+			}
+			else
+			{
+				 mychoice=document.getElementById('choice2').value;
+
+			}
+var comments = document.getElementById('description').value;
+
+
+			document.write( "name is " + name + "<br/>");
+			document.write("phone no : " + phone + "<br/>");
+			document.write( "choice of subject " + mychoice + "<br/>");
+			document.write(comments + "<br/>");
+
+		}
+	</script>
+</body>
+</html>
