@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Object</title>
+</head>
+<body>
+	<p>testing various functions of math object </p>
+	<p id="p1">pow(8,2)= </p>
+	<p id="p2">sqrt(64)= </p>
+	<p id="p3">abs(-4)=  </p>
+	<p id="p4">random number between 0 and 1 :</p>
+	<p id="p5">ceil rounds numer to nearest integer</p>
+	<p id="p6">trying floor</p>
+	<p id="p7">rounding off</p>
+	<p id="p8">sin of 90 degrees is</p>
+	<script type="text/javascript">
+
+		document.getElementById('p1').innerHTML += Math.pow(8,2);
+		document.getElementById('p2').innerHTML += Math.sqrt(64);
+		document.getElementById('p3').innerHTML += Math.abs(-4);
+		document.getElementById('p4').innerHTML += Math.random();
+		var y = Math.random();
+		document.write(" i am using the random number " + y);
+		document.getElementById('p5').innerHTML += Math.ceil(y);
+		document.getElementById('p6').innerHTML += Math.floor(y);
+		document.getElementById('p7').innerHTML += Math.round(y);
+		document.getElementById('p8').innerHTML += Math.sin(90*Math.PI/180);
+
+	</script>
+
+</body>
+</html>
