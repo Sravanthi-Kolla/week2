@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average marks</title>
+	<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h2>Average marks of all subjects</h2>
+<table>
+	<tr>
+		<th>subject</th>
+		<th>marks</th>
+
+	</tr>
+	<tr>
+		<td>maths</td>
+		<td>98</td>
+	</tr>
+	<tr>
+		<td>physics</td>
+		<td>91</td>
+	</tr>
+	<tr>
+		<td>chemistry</td>
+		<td>100</td>
+	</tr>
+</table>
+
+<p >maths=98,physics=91,chemistry=100</p>
+<p id = "p1"> sum = (maths+physics+chemistry)=</p>
+<p id="p2">avg=(maths+physics+chemistry)/3=</p>
+<script type="text/javascript">
+	var maths=98,physics=91,chemistry=100;
+	document.getElementById('p1').innerHTML+=(maths+physics+chemistry);
+	document.getElementById('p2').innerHTML+=(maths+physics+chemistry)/3;
+	
+
+
+</script>
+
+	
+</p>
+</body>
+</html>
