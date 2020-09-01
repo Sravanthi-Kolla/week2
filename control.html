@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<script type="text/javascript" >
+		var x = prompt("enter a number between 10 to 100");
+		if (x>10 && x<100) {
+		
+				var var1 = 0,var2 = 1, var3=0;
+		document.write("fibonacci series ");
+		while(var3<x)
+		{
+			document.write(var1+ " ");
+			var3 = var1 +var2;
+			var1  = var2;
+			var2 = var3;		}
+
+
+			}
+			
+				else
+		{
+			document.write("please enter number in specified range");
+		}
+		
+			
+		/*var x = prompt("enter a num in range 10-100");
+		var f1 =0;
+		var f2 = 1;
+		document.write("The fibonacci series :");
+		document.write("",f1," ");
+		document.write("",f2," ");
+		var i,f3;
+		for(i=2; i <x; i++)
+		{
+			f3=f1+f2;
+			document.write("",f3," ");
+			f1=f2;
+			f2=f3;
+		}*/
+	</script>
+
+</body>
+</html>
